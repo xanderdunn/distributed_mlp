@@ -43,7 +43,7 @@ def test_row_sharding(A: np.ndarray, B: np.ndarray) -> np.ndarray:
 
 def test_row_and_column_sharding(A: np.ndarray, B: np.ndarray) -> np.ndarray:
     """
-    This shards A by and B by column.
+    This shards A by row and B by column.
     Every worker has a shard of A and a shard of B.
     We aggregate the results by row.
     Then we aggregate the results  by column.
