@@ -8,7 +8,7 @@ This is tensor parallelism, as described here:
 https://openai.com/blog/techniques-for-training-large-neural-networks/
 
 I believe the below are examples of master-worker AllReduce.
-The "workers", here just processing created via a multiprocessing Pool,
+The "workers", here are just processes created via a multiprocessing Pool,
 each return all of their results to a "master", in this case simply
 the main process, which aggregates them all before proceeding to the next
 step.
